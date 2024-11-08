@@ -12,7 +12,7 @@ const app = express();
 //Middleware
 app.use(express.json());
 app.use(cors({
-  origin: 'http://localhost:5173', // Allow requests only from React app
+  origin: ['http://localhost:5173', 'https://nexcart.vercel.app'], // Allow requests only from React app
 }));
 
 
